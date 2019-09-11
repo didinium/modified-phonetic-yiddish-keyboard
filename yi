@@ -1,0 +1,43 @@
+// phonetic layout for Yiddish letters on an US keyboard
+// by Raphael Finkel <raphael@cs.uky.edu> 6/2010
+// reference: http://www.shoshke.net/uyip/keyboards.htm
+// further modified by me, Jonah. I don't know what the keyboard I was using before was called. Maybe shretl? I don't know why but that's always what comes to mind. Anyway it's now impossible to find and its gvaldik to set this shit up in linux so I will upload this mostly for my future self. zol zayn mit mazel!
+
+partial alphanumeric_keys
+xkb_symbols "yiddish" {
+
+    name[Group1]= "USA - Yiddish";
+
+    include "us(basic)"
+
+    key <AD01> {	[	  U05B7,	U05B8, U05B4, U05BF ]	};
+    key <AD02> {	[	  U05E9,	UFB2B		]	};
+    key <AD03> {	[	  U05E2,	U05F2		]	};
+    key <AD04> {	[	  U05E8,	U05E8		]	};
+    key <AD05> {	[	  U05D8,	UFB4A, U05EA, U05BC ]	};
+    key <AD06> {	[	  U05D9,	UFB1F, U05F2, U05F2 ]	};
+    key <AD07> {	[	  U05D5,	UFB35		]	};
+    key <AD08> {	[	  U05D9,	UFB1D, U05B4		]	};
+    key <AD09> {	[	  UFB2F,	U05F1, U05B8		]	};
+    key <AD10> {	[	  UFB44,	U05E4, U05BC		]	};
+
+    key <AC01> {	[	  UFB2E,	U05D0, U05B7 		]	};
+    key <AC02> {	[	  U05E1,	U05EA, UFB2B, UFB2B ]	};
+    key <AC03> {	[	  U05D3,	U05D3		]	};
+    key <AC04> {	[	  UFB4E,	U05E3, U05BF		]	};
+    key <AC05> {	[	  U05D2,	U05D2		]	};
+    key <AC06> {	[	  U05D4,	U05D7		]	};
+    key <AC07> {	[	  U05F2,	UFB1F		]	};
+    key <AC08> {	[	  U05E7,	UFB3B, U05DA, U05DA  ]	};
+    key <AC09> {	[	  U05DC,	U05DC		]	};
+
+    key <AB01> {	[	  U05D6,	U05D6 		]	};
+    key <AB02> {	[	  U05DB,	U05DA, U05BC, U05D7  ]	};
+    key <AB03> {	[	  U05E6,	U05E5		]	};
+    key <AB04> {	[	  U05F0,	UFB4C		]	};
+    key <AB05> {	[	  U05D1,	UFB4C, U05BF		]	};
+    key <AB06> {	[	  U05E0,	U05DF		]	};
+    key <AB07> {	[	  U05DE,	U05DD		]	};
+
+};
+
